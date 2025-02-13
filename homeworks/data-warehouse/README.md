@@ -12,6 +12,8 @@ Question 1: What is count of records for the 2024 Yellow Taxi Data?
 ```sql
 select count(1) from `data_engineering_zoomcamp.yellow_tripdata_2024_materialized`
 ```
+<img width="855" alt="image" src="https://github.com/user-attachments/assets/5851ca87-c4b1-41c1-a9b8-05b3f0f0dc27" />
+
 
 ## Question 2:
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.</br> 
@@ -28,11 +30,15 @@ Query external table
 ```sql  
     select count(distinct PULocationID) from `data_engineering_zoomcamp.yellow_tripdata_2024_external`
 ```
+<img width="1041" alt="image" src="https://github.com/user-attachments/assets/8153c7a3-10aa-4d2d-8299-4690f1c15971" />
+
 
 Query materialized table
 ```sql
     select count(distinct PULocationID) from `data_engineering_zoomcamp.yellow_tripdata_2024_materialized`
 ```
+<img width="1044" alt="image" src="https://github.com/user-attachments/assets/7b5af9af-2d2f-478a-aa59-92ff695c8a04" />
+
 
 ## Question 3:
 Write a query to retrieve the PULocationID from the table (not the external table) in BigQuery. Now write a query to retrieve the PULocationID and DOLocationID on the same table. Why are the estimated number of Bytes different?
@@ -45,6 +51,12 @@ doubling the estimated bytes processed.
 
 ## Solution
 A, Because of the columnar database.
+query ome column from materialized
+<img width="1044" alt="image" src="https://github.com/user-attachments/assets/85b87ff4-445f-4443-97cf-859c1cd289d4" />
+
+query two column
+<img width="1041" alt="image" src="https://github.com/user-attachments/assets/5baee200-17c5-4b15-a2b8-acc2fdce92db" />
+
 
 ## Question 4:
 How many records have a fare_amount of 0?
@@ -58,6 +70,8 @@ How many records have a fare_amount of 0?
 ```sql
     select count(1) from `data_engineering_zoomcamp.yellow_tripdata_2024_materialized` where fare_amount = 0
 ```
+<img width="826" alt="image" src="https://github.com/user-attachments/assets/61aa2391-e69c-42c0-bd81-cb9deb86e333" />
+
 
 ## Question 5:
 What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
@@ -118,10 +132,14 @@ Query non-partitioned table
 ```sql
     select distinct VendorID from `data_engineering_zoomcamp.yellow_tripdata_2024_materialized` where tpep_dropoff_datetime between '2024-03-01' and '2024-03-15'
 ```
+<img width="1046" alt="image" src="https://github.com/user-attachments/assets/b31d7c3f-f564-4284-a6c9-9765529dc0d7" />
+
 Query partitioned table
 ```sql
     select distinct VendorID from `data_engineering_zoomcamp.yellow_tripdata_2024_partitioned` where tpep_dropoff_datetime between '2024-03-01' and '2024-03-15'
 ```
+<img width="1047" alt="image" src="https://github.com/user-attachments/assets/5ba2393e-6f87-451d-93b3-27e5389ef820" />
+
 
 ## Question 7: 
 Where is the data stored in the External Table you created?
