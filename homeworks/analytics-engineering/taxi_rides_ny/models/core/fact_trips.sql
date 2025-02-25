@@ -50,7 +50,7 @@ select trips_unioned.tripid,
     trips_unioned.payment_type, 
     trips_unioned.payment_type_description
 from trips_unioned
-inner join dim_zones as pickup_zone
+left join dim_zones as pickup_zone
 on trips_unioned.pickup_locationid = pickup_zone.locationid
-inner join dim_zones as dropoff_zone
+left join dim_zones as dropoff_zone
 on trips_unioned.dropoff_locationid = dropoff_zone.locationid

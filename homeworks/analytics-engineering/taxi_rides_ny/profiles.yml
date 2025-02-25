@@ -4,7 +4,7 @@ taxi_rides_ny:
       dataset: data_engineering_zoomcamp
       job_execution_timeout_seconds: 300
       job_retries: 1
-      location: US
+      location: us-central1
       method: oauth
       priority: interactive
       project: sandbox-402413
