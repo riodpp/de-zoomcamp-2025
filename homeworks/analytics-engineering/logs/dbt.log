@@ -1,0 +1,51 @@
+[0m07:56:19.477574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042680e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048f1fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048f1a30>]}
+
+
+============================== 07:56:19.480697 | 103e46b9-01f5-4369-8e32-0b0c19cee529 ==============================
+[0m07:56:19.480697 [info ] [MainThread]: Running with dbt=1.9.1
+[0m07:56:19.481026 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/riodpp/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m07:56:49.829049 [debug] [MainThread]: Starter project path: /Users/riodpp/.pyenv/versions/3.12.0/envs/dbt/lib/python3.12/site-packages/dbt/include/starter_project
+[0m07:56:49.841091 [info ] [MainThread]: 
+Your new dbt project "taxi_rides_ny" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:56:49.841726 [info ] [MainThread]: Setting up your profile.
+[0m07:57:57.966572 [info ] [MainThread]: Profile taxi_rides_ny written to /Users/riodpp/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m07:57:57.978950 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 98.55864, "process_in_blocks": "0", "process_kernel_time": 0.267819, "process_mem_max_rss": "183992320", "process_out_blocks": "0", "process_user_time": 0.928661}
+[0m07:57:57.979695 [debug] [MainThread]: Command `dbt init` succeeded at 07:57:57.979533 after 98.56 seconds
+[0m07:57:57.980245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048f1d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11769cf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11769d4f0>]}
+[0m07:57:57.980801 [debug] [MainThread]: Flushing usage events
+[0m07:57:59.432741 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:58:06.388765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10457c980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10459a0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104599b50>]}
+
+
+============================== 07:58:06.391458 | 3e44244a-1475-47ea-9344-5a2eea991d31 ==============================
+[0m07:58:06.391458 [info ] [MainThread]: Running with dbt=1.9.1
+[0m07:58:06.391762 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/riodpp/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:58:06.399731 [info ] [MainThread]: dbt version: 1.9.1
+[0m07:58:06.399961 [info ] [MainThread]: python version: 3.12.0
+[0m07:58:06.400116 [info ] [MainThread]: python path: /Users/riodpp/.pyenv/versions/3.12.0/envs/dbt/bin/python3.12
+[0m07:58:06.400256 [info ] [MainThread]: os info: macOS-15.3.1-arm64-arm-64bit
+[0m07:58:06.849346 [info ] [MainThread]: Using profiles dir at /Users/riodpp/.dbt
+[0m07:58:06.849625 [info ] [MainThread]: Using profiles.yml file at /Users/riodpp/.dbt/profiles.yml
+[0m07:58:06.849804 [info ] [MainThread]: Using dbt_project.yml file at /Users/riodpp/Documents/sandbox/data-engineering-zoomcamp/homeworks/analytics-engineering/dbt_project.yml
+[0m07:58:06.850002 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:58:06.850849 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.51086414, "process_in_blocks": "0", "process_kernel_time": 0.14473, "process_mem_max_rss": "184680448", "process_out_blocks": "0", "process_user_time": 0.900171}
+[0m07:58:06.851048 [debug] [MainThread]: Command `dbt debug` failed at 07:58:06.851008 after 0.51 seconds
+[0m07:58:06.851224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10459a060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f60440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a2ab40>]}
+[0m07:58:06.851409 [debug] [MainThread]: Flushing usage events
+[0m07:58:07.933079 [debug] [MainThread]: An error was encountered while trying to flush usage events
